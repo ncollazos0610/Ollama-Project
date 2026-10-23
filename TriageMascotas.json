@@ -1,0 +1,716 @@
+{
+  "valor": "Inicio del Triage: ¿Cuál es el síntoma principal o emergencia que presenta su mascota?",
+  "hijos": [
+    {
+      "valor": "1. Problemas Digestivos (Siguiente pregunta: ¿Qué tipo específico de problema digestivo observa?)",
+      "hijos": [
+        {
+          "valor": "1.1 Vómitos continuos o severos (Siguiente pregunta: ¿Hace cuánto tiempo iniciaron los vómitos?)",
+          "hijos": [
+            {
+              "valor": "1.1.1 Iniciaron hace menos de 2 horas (Siguiente pregunta: ¿Qué aspecto visual tiene el vómito?)",
+              "hijos": [
+                {
+                  "valor": "1.1.1.1 Contiene restos de comida, plantas o basura (Siguiente pregunta: ¿Cuál es el estado general y edad de la mascota?)",
+                  "hijos": [
+                    {
+                      "valor": "Cachorro (menor a 1 año) - Alerta y activo (Siguiente pregunta: ¿Presenta también diarrea o heces anormales?)",
+                      "hijos": [
+                        { 
+                          "valor": "Sí, diarrea líquida o con mucosidad",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Posible gastroenteritis infecciosa o parasitaria incipiente. [PRIMEROS AUXILIOS]: Retirar comida sólida por 12 horas. Ofrecer suero oral para mascotas con jeringa cada 30 min en cantidades pequeñas. Acudir al veterinario si el ánimo decae." } ]
+                        },
+                        { 
+                          "valor": "No, sus heces son normales hasta ahora",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Indigestión leve o transgresión alimentaria. [PRIMEROS AUXILIOS]: Ayuno sólido de 12 horas. Mantener agua fresca disponible. Reiniciar con dieta blanda (pollo cocido sin hueso y arroz). Si vomita el agua, requiere consulta." } ]
+                        },
+                        { 
+                          "valor": "Diarrea con pintas de sangre fresca o muy oscura (Nueva opción)",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Alta sospecha de parasitosis severa o infección viral grave. [PRIMEROS AUXILIOS]: EMERGENCIA. Aislar de otras mascotas. No dar remedios caseros. Recolectar muestra de heces y acudir al veterinario el mismo día." } ]
+                        }
+                      ]
+                    },
+                    {
+                      "valor": "Cachorro (menor a 1 año) - Decaído, letárgico o con dolor (Siguiente pregunta: ¿Tiene el esquema de vacunación completo?)",
+                      "hijos": [
+                        { 
+                          "valor": "No tiene vacunas o están incompletas (Riesgo Parvovirus)",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: ALTA SOSPECHA DE PARVOVIRUS O CORONAVIRUS. [PRIMEROS AUXILIOS]: EMERGENCIA. Mantener abrigado al cachorro. NO forzar hidratación oral si vomita todo, corre riesgo de broncoaspirar. Urgencias veterinarias de inmediato." } ]
+                        },
+                        { 
+                          "valor": "Sí, vacunas al día",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Obstrucción por cuerpo extraño, intoxicación o infección bacteriana. [PRIMEROS AUXILIOS]: Revisar entorno por objetos faltantes o mordidos. No dar leche. Acudir al veterinario para radiografía y fluidoterapia." } ]
+                        }
+                      ]
+                    },
+                    {
+                      "valor": "Adulto/Geriátrico - Alerta y activo (Siguiente pregunta: ¿Ha bebido agua recientemente y la retiene?)",
+                      "hijos": [
+                        { 
+                          "valor": "Sí, bebe y no vomita el agua",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Gastritis leve o irritación estomacal. [PRIMEROS AUXILIOS]: Ayuno sólido de 12 a 24 horas permitiendo libre acceso al agua. Observación en casa. Iniciar dieta blanda progresiva." } ]
+                        },
+                        { 
+                          "valor": "No, vomita incluso el agua inmediatamente",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Obstrucción intestinal o pancreatitis. [PRIMEROS AUXILIOS]: URGENCIA. Retirar el agua de inmediato para evitar mayor deshidratación por reflejo emético. Acudir a clínica para imagenología." } ]
+                        },
+                        { 
+                          "valor": "Intenta beber desesperadamente pero babea mucho (Nueva opción)",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Náusea severa o cuerpo extraño atorado en boca/esófago. [PRIMEROS AUXILIOS]: Inspeccionar cuidadosamente la boca si se deja manipular sin riesgo de mordida. Si no se ve nada, ir a urgencias." } ]
+                        }
+                      ]
+                    },
+                    {
+                      "valor": "Adulto/Geriátrico - Decaído, letárgico o con dolor (Siguiente pregunta: ¿El abdomen se siente tenso o llora al tocarlo?)",
+                      "hijos": [
+                        { 
+                          "valor": "Sí, abdomen muy tenso y doloroso",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Abdomen agudo (posible peritonitis, cuerpo extraño perforante o pancreatitis severa). [PRIMEROS AUXILIOS]: EMERGENCIA. Evitar palpar la barriga. Transportar alzándolo desde el pecho y extremidades traseras. Urgencias inmediatas." } ]
+                        },
+                        { 
+                          "valor": "No, solo está decaído",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Gastroenteritis sistémica, afección renal o hepática aguda. [PRIMEROS AUXILIOS]: Reposo en lugar cómodo. Tomar temperatura si es posible. Programar consulta veterinaria en las próximas horas." } ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "valor": "1.1.1.2 Es líquido amarillo/verde (bilis) o espuma blanca (Siguiente pregunta: ¿Cuál es el estado general y edad de la mascota?)",
+                  "hijos": [
+                    {
+                      "valor": "Mascota de cualquier edad - Alerta pero no quiere comer (Siguiente pregunta: ¿Cuándo fue su última comida?)",
+                      "hijos": [
+                        { 
+                          "valor": "Hace más de 12 horas (Posible síndrome de vómito bilioso)",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Síndrome de vómito bilioso por estómago vacío. [PRIMEROS AUXILIOS]: Ofrecer un bocadillo muy pequeño o alimento húmedo. A futuro, dividir sus raciones diarias y dar una antes de dormir." } ]
+                        },
+                        { 
+                          "valor": "Comió hace poco tiempo",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Reflujo gástrico o inicio de intolerancia alimentaria. [PRIMEROS AUXILIOS]: Observar evolución. Dar dieta blanda en la siguiente toma. Si los episodios de espuma/bilis continúan, agendar consulta." } ]
+                        },
+                        { 
+                          "valor": "Lleva 24 horas o más sin comer (Nueva opción)",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Gastritis aguda, afección hepática o renal temprana. [PRIMEROS AUXILIOS]: No forzar a ingerir alimento sólido. Ofrecer suero oral con jeringa. Acudir al veterinario para analítica sanguínea." } ]
+                        }
+                      ]
+                    },
+                    {
+                      "valor": "Mascota de cualquier edad - Presenta temblores o convulsiones (Siguiente pregunta: ¿Pudo haber ingerido algún tóxico o planta venenosa?)",
+                      "hijos": [
+                        { 
+                          "valor": "Sí, hay sospecha de intoxicación",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Intoxicación aguda con compromiso neurológico. [PRIMEROS AUXILIOS]: EMERGENCIA. Identificar el tóxico y llevar envase. NO INDUCIR VÓMITO (puede empeorar convulsiones o causar quemaduras esofágicas). Ir a urgencias." } ]
+                        },
+                        { 
+                          "valor": "No hay evidencia de toxinas en el entorno",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Dolor abdominal severo, trastorno metabólico grave o fiebre altísima. [PRIMEROS AUXILIOS]: Mantener abrigado si tiene frío, o aplicar paños húmedos si está ardiendo. Minimizar ruidos. Traslado urgente a clínica." } ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "valor": "1.1.1.3 Presencia de sangre fresca (roja) o digerida (oscura) (Siguiente pregunta: ¿Cuál es el estado general y edad de la mascota?)",
+                  "hijos": [
+                    {
+                      "valor": "Paciente con encías rosadas y respiración normal (Siguiente pregunta: ¿Toma algún medicamento como antiinflamatorios?)",
+                      "hijos": [
+                        { 
+                          "valor": "Sí, ha tomado AINEs o medicación recientemente",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Úlcera o irritación gástrica secundaria a medicamentos. [PRIMEROS AUXILIOS]: SUSPENDER INMEDIATAMENTE la medicación. Proveer protector gástrico solo si fue recetado previamente. Acudir al veterinario pronto." } ]
+                        },
+                        { 
+                          "valor": "No toma ningún medicamento",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Ruptura de capilares por esfuerzo repetido de vómito. [PRIMEROS AUXILIOS]: Ayuno total (agua y comida) por 4 a 6 horas para descanso gástrico. Llevar al veterinario el mismo día para frenar el vómito." } ]
+                        }
+                      ]
+                    },
+                    {
+                      "valor": "Paciente con encías muy pálidas o blancas, débil (Siguiente pregunta: ¿El sangrado es abundante o son solo pintas?)",
+                      "hijos": [
+                        { 
+                          "valor": "Vómito casi completamente de sangre (Emergencia crítica)",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Hemorragia digestiva severa / Riesgo de Shock Hipovolémico. [PRIMEROS AUXILIOS]: EMERGENCIA VITAL. Mantener al paciente de lado, tranquilo y abrigado. No dar nada por vía oral. Traslado inmediato al hospital." } ]
+                        },
+                        { 
+                          "valor": "Solo estrías o pintas de sangre",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Irritación severa de mucosa gástrica con inicio de sangrado activo. [PRIMEROS AUXILIOS]: Evitar estrés y actividad. No administrar remedios caseros. Ir al veterinario por vía de urgencia moderada." } ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "valor": "1.2 Intentos de vómito sin éxito (arcadas) y abdomen muy hinchado (Siguiente pregunta: ¿Hace cuánto tiempo notó esta hinchazón?)",
+          "hijos": [
+            {
+              "valor": "1.2.1 Hace menos de 1 hora, fue muy repentino (Siguiente pregunta: ¿Qué tamaño o raza es su mascota?)",
+              "hijos": [
+                {
+                  "valor": "1.2.1.1 Perro de raza grande o gigante (Siguiente pregunta: ¿Cuál es su estado actual?)",
+                  "hijos": [
+                    {
+                      "valor": "Inquieto, jadea mucho, no se puede acostar (Siguiente pregunta: ¿Comió una porción grande o hizo ejercicio brusco antes?)",
+                      "hijos": [
+                        { 
+                          "valor": "Sí, comió mucho y jugó/corrió enseguida (Posible torsión gástrica)",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Dilatación Vólvulo Gástrica (Torsión Gástrica). [PRIMEROS AUXILIOS]: EMERGENCIA VITAL. El tiempo es oro (minutos cuentan). NO dar agua ni comida. Transportar a un hospital con capacidad quirúrgica de inmediato." } ]
+                        },
+                        { 
+                          "valor": "No, estaba en reposo",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Obstrucción por cuerpo extraño, o dilatación incipiente. [PRIMEROS AUXILIOS]: EMERGENCIA. Evitar agitación o que el perro salte al auto, alzarlo con cuidado. Directo a rayos X." } ]
+                        }
+                      ]
+                    },
+                    {
+                      "valor": "Colapsado en el suelo, encías grises o moradas (Siguiente pregunta: ¿Tiene pulso débil o respiración dificultosa?)",
+                      "hijos": [
+                        { 
+                          "valor": "Sí, casi no responde (Emergencia vital inminente)",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Shock obstructivo severo por Torsión Gástrica. [PRIMEROS AUXILIOS]: EMERGENCIA EXTREMA. Transportar en camilla rígida o manta tensa entre dos personas. Llamar a la clínica en el camino para preparar quirófano." } ]
+                        },
+                        { 
+                          "valor": "Responde al llamado pero no se levanta",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Shock temprano por dolor u obstrucción masiva. [PRIMEROS AUXILIOS]: Despejar vías aéreas, mantener cuello recto. Transporte inmediato." } ]
+                        },
+                        { 
+                          "valor": "Intenta vomitar y expulsa mucha baba espesa o espuma (Nueva opción)",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Obstrucción esofágica o Torsión Gástrica. [PRIMEROS AUXILIOS]: Revisar si hay un objeto asomando en garganta, si no es fácil de sacar NO intentar (puede desgarrar). Urgencias de inmediato." } ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "valor": "2. Problemas Respiratorios (Siguiente pregunta: ¿Cómo describe la dificultad para respirar?)",
+      "hijos": [
+        {
+          "valor": "2.1 Respiración muy rápida y superficial en reposo (Siguiente pregunta: ¿Hay cambios en el color de las encías o lengua?)",
+          "hijos": [
+            {
+              "valor": "2.1.1 Sí, están azules, moradas o muy pálidas (Siguiente pregunta: ¿El animal tose o hace ruidos extraños al respirar?)",
+              "hijos": [
+                {
+                  "valor": "2.1.1.1 Hace ruidos de ahogo o silbidos muy fuertes (Siguiente pregunta: ¿Qué postura ha adoptado la mascota?)",
+                  "hijos": [
+                    {
+                      "valor": "Cuello totalmente extendido, patas separadas, mirada angustiada (Siguiente pregunta: ¿Pudo haberse atragantado con un juguete o hueso?)",
+                      "hijos": [
+                        { 
+                          "valor": "Sí, estaba masticando algo antes del episodio",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Obstrucción de vías respiratorias altas (Atragantamiento). [PRIMEROS AUXILIOS]: EMERGENCIA. Si el animal colapsa, intentar barrido manual en boca. Si está consciente, aplicar Maniobra de Heimlich para perros/gatos modificada y correr a la clínica." } ]
+                        },
+                        { 
+                          "valor": "No, empezó de la nada",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Colapso traqueal agudo o reacción anafiláctica severa. [PRIMEROS AUXILIOS]: Proveer un entorno hiperventilado y muy fresco. Estrés cero, no manipular excesivamente. Correr a urgencias para oxígeno." } ]
+                        }
+                      ]
+                    },
+                    {
+                      "valor": "Acostado de lado, casi inerte, respira con el abdomen (Siguiente pregunta: ¿Es un perro de raza ñata / braquicéfalo?)",
+                      "hijos": [
+                        { 
+                          "valor": "Sí (Bulldog, Pug, etc.)",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Síndrome Braquicefálico descompensado / Edema de glotis. [PRIMEROS AUXILIOS]: EMERGENCIA. Aplicar compresas frías en axilas e ingle para bajar temperatura (suelen recalentarse al ahogarse). Llevar alzado a urgencias." } ]
+                        },
+                        { 
+                          "valor": "No, es de hocico largo",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Falla respiratoria aguda (Neumonía, derrame pleural). [PRIMEROS AUXILIOS]: Colocar en posición esternal (pecho tocando el suelo, cabeza levantada) para maximizar expansión pulmonar. Traslado urgente." } ]
+                        },
+                        { 
+                          "valor": "Es un gato que respira con la boca abierta (Nueva opción)",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Distress respiratorio severo felino (Asma grave, cardiopatía). [PRIMEROS AUXILIOS]: EMERGENCIA CRÍTICA EN GATOS. Usar transportadora con manta oscura. Manipular lo mínimo posible (estrés los puede matar). Oxigenoterapia urgente." } ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "valor": "2.1.1.2 No hace ruido, pero se asfixia en silencio (Siguiente pregunta: ¿Qué postura ha adoptado la mascota?)",
+                  "hijos": [
+                    {
+                      "valor": "Postura encorvada por aparente dolor en el pecho/costillas (Siguiente pregunta: ¿Sufrió algún golpe, caída o atropello reciente?)",
+                      "hijos": [
+                        { 
+                          "valor": "Sí, hubo un trauma (Posible neumotórax/hernia diafragmática)",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Neumotórax traumático o hernia diafragmática. [PRIMEROS AUXILIOS]: EMERGENCIA. Transportar sobre superficie rígida. Minimizar movimientos para no colapsar más pulmones. Quirófano inmediato." } ]
+                        },
+                        { 
+                          "valor": "No ha sufrido traumas conocidos",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Dolor torácico/abdominal severo que impide respirar profundo. [PRIMEROS AUXILIOS]: Manipular con extrema delicadeza. Evitar presionar pecho y vientre. Traslado inmediato." } ]
+                        }
+                      ]
+                    },
+                    {
+                      "valor": "Buscando lugares frescos, muy desesperado (Siguiente pregunta: ¿Tiene antecedentes de problemas cardíacos?)",
+                      "hijos": [
+                        { 
+                          "valor": "Sí, está diagnosticado con soplo o falla cardíaca",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Edema pulmonar cardiogénico agudo. [PRIMEROS AUXILIOS]: EMERGENCIA. Mantener máxima calma. Administrar medicación de rescate diurética/cardíaca SOLO si el cardiólogo ya la indicó para crisis. Ir al hospital." } ]
+                        },
+                        { 
+                          "valor": "No tiene historial cardíaco",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Tromboembolismo, intoxicación aguda o patología cardiopulmonar silente. [PRIMEROS AUXILIOS]: Reposo absoluto en ambiente ventilado. No forzar a caminar. Urgencias." } ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "valor": "2.1.2 Color normal (rosadas) pero respira rápido (Siguiente pregunta: ¿Ha estado expuesto a altas temperaturas recientemente?)",
+              "hijos": [
+                {
+                  "valor": "2.1.2.1 Sí, se quedó en el auto o hizo mucho ejercicio bajo el sol (Siguiente pregunta: ¿Cómo es su estado de consciencia?)",
+                  "hijos": [
+                    {
+                      "valor": "Muy desorientado, babeo excesivo, tambaleante (Siguiente pregunta: ¿Siente su cuerpo extremadamente caliente al tacto?)",
+                      "hijos": [
+                        { 
+                          "valor": "Sí, irradia mucho calor (Posible golpe de calor grave)",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: GOLPE DE CALOR GRAVE. [PRIMEROS AUXILIOS]: EMERGENCIA VITAL. Iniciar enfriamiento activo YA: Mojar con agua fresca (NO helada), ventilador directo, alcohol en almohadillas plantares. Trasladar mientras se enfría." } ]
+                        },
+                        { 
+                          "valor": "Temperatura normal al tacto",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Hipoxia, trastorno neurológico o metabólico severo. [PRIMEROS AUXILIOS]: Mantener en ambiente seguro libre de obstáculos. Grabar video corto de la conducta. Urgencias veterinarias." } ]
+                        }
+                      ]
+                    },
+                    {
+                      "valor": "Consciente pero muy cansado, jadeo constante (Siguiente pregunta: ¿Ha logrado estabilizarse tras ofrecerle agua y sombra?)",
+                      "hijos": [
+                        { 
+                          "valor": "No, el jadeo no disminuye después de 20 minutos",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Golpe de calor moderado o síndrome febril asociado. [PRIMEROS AUXILIOS]: Aplicar toallas mojadas (sin gotear) en vientre y cuello. Vigilar de cerca. Si empeora en 10 min, al veterinario." } ]
+                        },
+                        { 
+                          "valor": "Sí, empieza a calmarse gradualmente",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Estrés térmico o fatiga leve pasajera. [PRIMEROS AUXILIOS]: Reposo absoluto en lugar fresco. Ofrecer agua en cantidades pequeñas cada 15 min. Observación domiciliaria estricta por 2h." } ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "valor": "3. Traumatismos, Heridas o Accidentes (Siguiente pregunta: ¿Qué tipo de lesión o accidente ocurrió?)",
+      "hijos": [
+        {
+          "valor": "3.1 Atropellamiento, caída desde altura o golpe fuerte (Siguiente pregunta: ¿El animal puede caminar o levantarse por sí mismo?)",
+          "hijos": [
+            {
+              "valor": "3.1.1 No, está postrado o no mueve las patas (Siguiente pregunta: ¿Hay presencia de sangrado externo visible?)",
+              "hijos": [
+                {
+                  "valor": "3.1.1.1 Sí, sangrado abundante o constante (Siguiente pregunta: ¿De dónde proviene la sangre y cuál es la edad del paciente?)",
+                  "hijos": [
+                    {
+                      "valor": "Cachorro o Adulto - Sangrado por la nariz, boca u oídos (Siguiente pregunta: ¿Ha perdido el conocimiento en algún momento?)",
+                      "hijos": [
+                        { 
+                          "valor": "Sí, está inconsciente o muy aletargado",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Traumatismo Craneoencefálico Grave (TCE). [PRIMEROS AUXILIOS]: EMERGENCIA VITAL. Mantener cuerpo en tabla rígida, cabeza elevada unos 30° sin doblar el cuello. NO limpiar dentro de nariz u oídos. Hospital urgente." } ]
+                        },
+                        { 
+                          "valor": "No, está despierto pero asustado",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Conmoción cerebral o fractura ósea facial maxilar. [PRIMEROS AUXILIOS]: Limpiar exterior suavemente. Presión ligera externa con gasa (sin obstruir respiración). Evitar luz y ruidos fuertes. Urgencias." } ]
+                        }
+                      ]
+                    },
+                    {
+                      "valor": "Cachorro o Adulto - Sangrado en una extremidad con posible hueso expuesto (Siguiente pregunta: ¿Se ha aplicado algún torniquete o presión directa?)",
+                      "hijos": [
+                        { 
+                          "valor": "Presión directa aplicada, el sangrado no cesa",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Hemorragia arterial o daño vascular mayor. [PRIMEROS AUXILIOS]: EMERGENCIA. Mantener presión firme directa sin levantar la gasa (poner más gasas encima si se empapan). Torniquete a 5cm de la herida SOLO si corre peligro la vida, aflojando 30 seg cada 15 min. Correr al hospital." } ]
+                        },
+                        { 
+                          "valor": "El sangrado parece estar deteniéndose",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Fractura abierta o herida profunda con hemostasia primaria exitosa. [PRIMEROS AUXILIOS]: Cubrir la herida limpia con apósito estéril. NO entablillar si no se tiene capacitación. Mantener paciente quieto. Urgencias." } ]
+                        }
+                      ]
+                    },
+                    {
+                      "valor": "Cachorro o Adulto - Sangrado en la zona abdominal o tórax (Siguiente pregunta: ¿La herida parece profunda o penetrante?)",
+                      "hijos": [
+                        { 
+                          "valor": "Herida profunda o con vísceras expuestas (Emergencia extrema)",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Evisceración o herida penetrante cavitaria. [PRIMEROS AUXILIOS]: EMERGENCIA EXTREMA. NO INTENTAR REINTRODUCIR ÓRGANOS. Cubrir con una toalla sumamente limpia y humedecida en suero fisiológico tibio. Vuelo al quirófano." } ]
+                        },
+                        { 
+                          "valor": "Parece superficial pero sangra mucho",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Laceración tisular extensa, avulsión cutánea. [PRIMEROS AUXILIOS]: Lavar bordes con suero. Colocar vendaje compresivo leve. Transportar a cirugía menor para sutura." } ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "valor": "3.1.1.2 No hay sangrado externo visible, pero se queja de dolor (Siguiente pregunta: ¿Cuál es el estado de consciencia y edad?)",
+                  "hijos": [
+                    {
+                      "valor": "Adulto/Geriátrico - Encías pálidas, letárgico y respiración superficial (Siguiente pregunta: ¿Su abdomen se está hinchando visiblemente?)",
+                      "hijos": [
+                        { 
+                          "valor": "Sí, abdomen distendido (Posible hemorragia interna)",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Hemorragia Interna Abdominal (Ruptura de bazo o hígado). [PRIMEROS AUXILIOS]: EMERGENCIA VITAL. Transportar en camilla rígida (o cobija tensa) con máximo cuidado evitando sacudidas. Avisar a la clínica en camino." } ]
+                        },
+                        { 
+                          "valor": "No, el abdomen luce normal",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Shock neurogénico, contusión espinal o torácica. [PRIMEROS AUXILIOS]: Manipular en bloque cuidando de no flexionar ni rotar la columna vertebral. Directo a radiología." } ]
+                        }
+                      ]
+                    },
+                    {
+                      "valor": "Cachorro - Muy asustado, llora al mínimo contacto físico (Siguiente pregunta: ¿Siente crepitación o deformidad en alguna extremidad?)",
+                      "hijos": [
+                        { 
+                          "valor": "Sí, una pata está en un ángulo anormal",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Fractura ósea cerrada o luxación mayor. [PRIMEROS AUXILIOS]: Inmovilizar envolviendo la extremidad con una revista gruesa o toalla enrollada como férula improvisada y fijarla con cinta (sin apretar demasiado). Prevenir mordeduras por dolor. Ir a consulta." } ]
+                        },
+                        { 
+                          "valor": "No hay deformidades obvias",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Fisura, contusión muscular profunda o esguince. [PRIMEROS AUXILIOS]: Reposo en transportadora o espacio pequeño para inmovilizar. Aplicar frío local indirecto por 10 min. Agendar cita traumatológica prioritaria." } ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "valor": "3.2 Quemaduras por líquidos calientes, fuego o químicos (Siguiente pregunta: ¿Qué porcentaje o zona del cuerpo parece afectada?)",
+          "hijos": [
+            {
+              "valor": "3.2.1 Zonas extensas o áreas críticas como cara, ojos y patas (Siguiente pregunta: ¿Qué tipo de sustancia causó la quemadura?)",
+              "hijos": [
+                {
+                  "valor": "3.2.1.1 Agua hirviendo o aceite (Siguiente pregunta: ¿Cuál es la edad y estado de la mascota?)",
+                  "hijos": [
+                    {
+                      "valor": "Cachorro - En shock, temblando y llorando constantemente (Siguiente pregunta: ¿La piel se ve desprendida o en carne viva?)",
+                      "hijos": [
+                        { 
+                          "valor": "Sí, pérdida severa de piel",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Quemadura térmica de 2do/3er grado extensa. [PRIMEROS AUXILIOS]: EMERGENCIA. NO APLICAR POMADAS NI REMEDIOS (peoran todo). Cubrir lesiones con apósitos húmedos con suero estéril frío. Mantener abrigado el resto del cuerpo (riesgo de hipotermia por shock). Hospital urgente." } ]
+                        },
+                        { 
+                          "valor": "No, solo está muy rojo e inflamado",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Quemadura térmica superficial (1er grado). [PRIMEROS AUXILIOS]: Enfriar la zona bañando con agua fresca (NO hielos) por 15 minutos continuos para detener daño en tejido profundo. Secar con toques suaves. Acudir al veterinario." } ]
+                        }
+                      ]
+                    },
+                    {
+                      "valor": "Adulto - Muy alterado, intentando lamerse la herida desesperadamente (Siguiente pregunta: ¿Afectó directamente los ojos o la boca?)",
+                      "hijos": [
+                        { 
+                          "valor": "Sí, no puede abrir los ojos",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Quemadura ocular térmica o química grave. [PRIMEROS AUXILIOS]: EMERGENCIA VISUAL. Irrigar los ojos con abundante suero fisiológico a presión muy suave durante 10 minutos mínimo. Collar isabelino inmediato y correr al oftalmólogo." } ]
+                        },
+                        { 
+                          "valor": "No, afectó principalmente el lomo o las patas",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Quemadura cutánea localizada dolorosa. [PRIMEROS AUXILIOS]: Lavar con agua a temperatura ambiente. Prevenir absolutamente que se lama la herida (el tejido está muy frágil). Llevar a curación veterinaria." } ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "valor": "4. Problemas Neurológicos o de Comportamiento (Siguiente pregunta: ¿Qué alteración neurológica observa principalmente?)",
+      "hijos": [
+        {
+          "valor": "4.1 Convulsiones, temblores severos o rigidez corporal (Siguiente pregunta: ¿Cuánto tiempo duró o lleva la convulsión?)",
+          "hijos": [
+            {
+              "valor": "4.1.1 Más de 5 minutos continuos o no recobra consciencia entre episodios (Siguiente pregunta: ¿Tuvo acceso a posibles toxinas, venenos o basuras recientemente?)",
+              "hijos": [
+                {
+                  "valor": "4.1.1.1 Sí, posible ingestión de raticida, medicamentos o tóxicos (Siguiente pregunta: ¿Cuál es la edad y estado actual de la mascota?)",
+                  "hijos": [
+                    {
+                      "valor": "Cachorro - Inconsciente, pupilas dilatadas, respiración lenta (Siguiente pregunta: ¿Se conoce exactamente qué veneno ingirió?)",
+                      "hijos": [
+                        { 
+                          "valor": "Sí, tengo el empaque del tóxico",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Intoxicación tóxica aguda severa. [PRIMEROS AUXILIOS]: EMERGENCIA VITAL. Traer foto o empaque físico del tóxico a la clínica. NO INDUCIR VÓMITO a un animal inconsciente. Soporte respiratorio manual si para de respirar. Vuelo al hospital." } ]
+                        },
+                        { 
+                          "valor": "No, solo es una sospecha",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Síndrome toxicológico neurológico no filiado. [PRIMEROS AUXILIOS]: Asegurar que no se asfixie con la lengua. Recoger muestras de vómito en doble bolsa plástica si hay. Urgencias inmediatas." } ]
+                        }
+                      ]
+                    },
+                    {
+                      "valor": "Adulto/Geriátrico - Convulsionando activamente, babeo excesivo, rigidez (Siguiente pregunta: ¿Ha vomitado durante las convulsiones?)",
+                      "hijos": [
+                        { 
+                          "valor": "Sí (Riesgo alto de broncoaspiración)",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Estatus epiléptico toxicológico con emesis activa. [PRIMEROS AUXILIOS]: EMERGENCIA. Mantener cuerpo y cabeza ladeados hacia el piso para que la gravedad escurra el vómito y saliva. Limpiar fluidos de boca exterior. Correr a la clínica." } ]
+                        },
+                        { 
+                          "valor": "No ha vomitado",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Excitotoxicidad neurológica aguda. [PRIMEROS AUXILIOS]: Acolchar el perímetro (cojines). Apagar luces y sonidos. Envolver en manta gruesa firme para su seguridad durante el transporte. Hospitalización urgente." } ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "valor": "4.1.1.2 No, estaba en un entorno seguro y controlado (Siguiente pregunta: ¿Tiene diagnóstico previo de epilepsia y qué edad tiene?)",
+                  "hijos": [
+                    {
+                      "valor": "Adulto/Geriátrico con epilepsia - Convulsión prolongada, no recobra consciencia (Siguiente pregunta: ¿Se le ha administrado su medicación de rescate?)",
+                      "hijos": [
+                        { 
+                          "valor": "Sí, pero no hace efecto (Status Epilepticus)",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Estatus epiléptico refractario (peligro daño cerebral por hipertermia). [PRIMEROS AUXILIOS]: EMERGENCIA VITAL. Aplicar toallas mojadas frescas en patas e ingles para frenar sobrecalentamiento muscular. Reanimación intravenosa urgente en clínica." } ]
+                        },
+                        { 
+                          "valor": "No cuenta con medicación de rescate",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Crisis en racimo o convulsión prolongada. [PRIMEROS AUXILIOS]: NO introducir manos a la boca. Retirar objetos contundentes del entorno. Transportar en piso del vehículo. Urgencias para sedación." } ]
+                        }
+                      ]
+                    },
+                    {
+                      "valor": "Paciente joven sin antecedentes - Primer episodio, pedaleo en el suelo (Siguiente pregunta: ¿La temperatura del perro se siente anormalmente alta?)",
+                      "hijos": [
+                        { 
+                          "valor": "Sí, está hirviendo en fiebre",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Encefalitis infecciosa (Moquillo) o Golpe de calor interno. [PRIMEROS AUXILIOS]: Humedecer el pelaje para enfriar progresivamente. Prevenir auto-daños. Urgencias infecciosas inmediatas." } ]
+                        },
+                        { 
+                          "valor": "Temperatura normal al tacto",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Epilepsia idiopática juvenil, hipoglicemia severa o anomalía anatómica cerebral. [PRIMEROS AUXILIOS]: Si es raza pequeña/toy, untar un poco de miel en las encías (con cuidado). Programar evaluación neurológica completa." } ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "valor": "4.2 Pérdida repentina del equilibrio o cabeza ladeada (Síndrome Vestibular) (Siguiente pregunta: ¿La mascota puede mantenerse en pie por sí sola?)",
+          "hijos": [
+            {
+              "valor": "4.2.1 No, rueda sobre sí misma o se cae constantemente (Siguiente pregunta: ¿Sus ojos se mueven rápidamente de lado a lado [Nistagmo]?)",
+              "hijos": [
+                {
+                  "valor": "4.2.1.1 Sí, movimiento ocular rápido evidente (Siguiente pregunta: ¿Ha tenido infecciones de oído recientes o cuál es su edad?)",
+                  "hijos": [
+                    {
+                      "valor": "Paciente geriátrico - Aparición súbita, sin otros síntomas de enfermedad (Siguiente pregunta: ¿Está vomitando por el mareo?)",
+                      "hijos": [
+                        { 
+                          "valor": "Sí, no retiene nada de comida",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Síndrome Vestibular Idiopático Geriátrico con hiperemesis. [PRIMEROS AUXILIOS]: Restringir movimiento en espacio acolchado y a nivel del suelo. Luz tenue. Acudir para control antiemético inyectable." } ]
+                        },
+                        { 
+                          "valor": "No ha vomitado",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Accidente vascular o Síndrome Vestibular Idiopático compensado. [PRIMEROS AUXILIOS]: Usar una toalla por debajo del abdomen como arnés de soporte para ayudarlo a orinar. Bloquear acceso a escaleras. Visita neurológica." } ]
+                        }
+                      ]
+                    },
+                    {
+                      "valor": "Paciente adulto - Con historial de rascarse mucho las orejas recientemente (Siguiente pregunta: ¿Las orejas tienen mal olor o secreción oscura?)",
+                      "hijos": [
+                        { 
+                          "valor": "Sí, mucho olor y secreción abundante",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Otitis media o interna severa con irritación del nervio vestibular. [PRIMEROS AUXILIOS]: NO APLICAR gotas de limpieza ni meter hisopos (riesgo tímpano perforado). Poner collar isabelino. Consulta veterinaria prioritaria." } ]
+                        },
+                        { 
+                          "valor": "No, los oídos parecen limpios",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Lesión vestibular central (intracraneal) o masa ocupante. [PRIMEROS AUXILIOS]: Prevenir traumatismos por caídas. Transporte en caja cerrada y plana. Requiere TAC o RM." } ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "valor": "5. Problemas Urinarios o Reproductivos (Siguiente pregunta: ¿Cuál es el síntoma principal que observa?)",
+      "hijos": [
+        {
+          "valor": "5.1 Esfuerzo para orinar sin éxito, goteo o orina con sangre (Siguiente pregunta: ¿Hace cuánto tiempo presenta esta dificultad?)",
+          "hijos": [
+            {
+              "valor": "5.1.1 Más de 12 horas, o aparición repentina con mucho dolor (Siguiente pregunta: ¿Ha notado vómitos, letargo extremo o decaimiento acompañando este síntoma?)",
+              "hijos": [
+                {
+                  "valor": "5.1.1.1 Sí, está muy decaído, no quiere comer y ha vomitado (Siguiente pregunta: ¿Cuál es la especie y sexo de la mascota?)",
+                  "hijos": [
+                    {
+                      "valor": "Perro macho - Estado crítico (Siguiente pregunta: ¿El abdomen está duro al tacto en la zona posterior?)",
+                      "hijos": [
+                        { 
+                          "valor": "Sí, globo vesical palpable y tenso (Obstrucción urinaria grave)",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Obstrucción uretral total por urolitiasis. [PRIMEROS AUXILIOS]: EMERGENCIA VITAL. Riesgo inminente de ruptura de vejiga o falla renal aguda. NO TOCAR NI PRESIONAR EL ABDOMEN BAJO. Quirófano inmediato para sondaje." } ]
+                        },
+                        { 
+                          "valor": "No se siente distendido",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Pielonefritis severa o prostatomegalia complicada. [PRIMEROS AUXILIOS]: Fomentar consumo de agua hidratante (sin forzar vómito). Si orina, recolectar muestra en envase estéril. Consulta prioritaria hoy." } ]
+                        }
+                      ]
+                    },
+                    {
+                      "valor": "Hembra canina - Estado crítico (Siguiente pregunta: ¿Está esterilizada?)",
+                      "hijos": [
+                        { 
+                          "valor": "No, es entera (Riesgo altísimo de piómetra)",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Piómetra (Infección uterina grave con toxemia). [PRIMEROS AUXILIOS]: EMERGENCIA QUIRÚRGICA. No aplicar calor local ni masajear abdomen. Traslado cuidadoso a hospital de urgencias 24h." } ]
+                        },
+                        { 
+                          "valor": "Sí, está operada",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: ITU severa aguda o cálculos vesicales grandes. [PRIMEROS AUXILIOS]: Estimular hidratación ofreciendo caldo de pollo sin sal/cebolla diluido. Consulta veterinaria en corto plazo para antibiograma." } ]
+                        }
+                      ]
+                    },
+                    {
+                      "valor": "Gato Macho (Nueva opción)",
+                      "hijos": [
+                        { 
+                          "valor": "Cualquier estado",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: FLUTD (Enfermedad del tracto urinario felino) o tapón uretral. [PRIMEROS AUXILIOS]: EMERGENCIA VITAL EN GATOS. Los gatos mueren rápido de toxicidad por orina retenida. No apretar abdomen. Llevar a clínica al instante." } ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "valor": "5.1.1.2 No, solo se queja y se lame constantemente la zona genital (Siguiente pregunta: ¿Cuál es la especie y sexo de la mascota?)",
+                  "hijos": [
+                    {
+                      "valor": "Perro macho o hembra - Alerta pero orinando gotas por toda la casa (Siguiente pregunta: ¿La orina es francamente roja?)",
+                      "hijos": [
+                        { 
+                          "valor": "Sí, parece sangre pura",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Cistitis hemorrágica severa o urolitiasis abrasiva, posible intoxicación. [PRIMEROS AUXILIOS]: Guardar muestra de sangre u orina en frasco limpio. Limitar actividad brusca. Agendar ecografía hoy mismo." } ]
+                        },
+                        { 
+                          "valor": "Son solo gotas amarillas o levemente rosadas",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Cistitis bacteriana o presencia de sedimento urinario (arenilla). [PRIMEROS AUXILIOS]: Aumentar libremente ingesta hídrica. Sacar a hacer necesidades con frecuencia para no retener. Consulta de control pronto." } ]
+                        },
+                        { 
+                          "valor": "Llora fuerte al momento de expulsar la gota (Nueva opción)",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Espasmo uretral agudo o cálculo en tránsito doloroso. [PRIMEROS AUXILIOS]: Colocar toalla seca entibiada en el bajo abdomen para relajar la musculatura pélvica momentáneamente. Llevar a revisión médica." } ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "valor": "6. Problemas Oculares o Faciales (Siguiente pregunta: ¿Qué síntoma principal tiene en el ojo o la cara?)",
+      "hijos": [
+        {
+          "valor": "6.1 Ojo fuera de su órbita (proptosis) o herida penetrante grave (Siguiente pregunta: ¿Cómo ocurrió la lesión?)",
+          "hijos": [
+            {
+              "valor": "6.1.1 Mordedura de otro animal o golpe muy fuerte en la cabeza (Siguiente pregunta: ¿Hay sangrado activo u otros daños visibles?)",
+              "hijos": [
+                {
+                  "valor": "6.1.1.1 Sí, hay sangrado abundante en la cara o cráneo (Siguiente pregunta: ¿Cuál es el estado de consciencia actual de la mascota?)",
+                  "hijos": [
+                    {
+                      "valor": "Alerta, muy alterado, intentando rascarse la herida (Siguiente pregunta: ¿Le ha colocado collar isabelino u obstáculo para que no se toque?)",
+                      "hijos": [
+                        { 
+                          "valor": "No, se está lastimando más el ojo",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Proptosis, prolapso o laceración empeorada por autotraumatismo. [PRIMEROS AUXILIOS]: EMERGENCIA. Inmovilizar patas delanteras con ayuda física inmediata. Poner collar isabelino casero de cartón si no hay otro. Cubrir con gasa mojada en suero. Urgencias." } ]
+                        },
+                        { 
+                          "valor": "Sí, ya está protegido",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Laceración tisular grave o proptosis controlada de auto-daño. [PRIMEROS AUXILIOS]: Mantener el ojo húmedo constamente con gasa empapada en suero fisiológico (un ojo seco se necrosa). Cirugía reconstructiva u oftalmólogo urgente." } ]
+                        }
+                      ]
+                    },
+                    {
+                      "valor": "Decaído, semi-inconsciente o en shock (Siguiente pregunta: ¿Respira con dificultad?)",
+                      "hijos": [
+                        { 
+                          "valor": "Sí, respiración irregular o con pausas",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Shock hemorrágico neurogénico o daño cerebral con herniación inminente. [PRIMEROS AUXILIOS]: EMERGENCIA VITAL MÁXIMA. Ignorar el ojo por ahora, la prioridad es vía respiratoria. Elevar la cabeza suavemente y estabilizar cuello. Volar a UCI." } ]
+                        },
+                        { 
+                          "valor": "Respira de forma normal",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Shock compensado por estrés algico (dolor extremo) facial. [PRIMEROS AUXILIOS]: NO limpiar ni manipular la cara de forma agresiva. Transportar en caja/guacal oscuro para bajar presión intraocular y estrés visual. Urgencias." } ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "valor": "6.1.1.2 No hay sangrado importante, pero el globo ocular está expuesto (Siguiente pregunta: ¿Cuál es el estado de consciencia actual de la mascota?)",
+                  "hijos": [
+                    {
+                      "valor": "Mascota de raza braquicéfala (Pug, Bulldog, Shih Tzu) - Muy adolorida (Siguiente pregunta: ¿El ojo está seco o sucio?)",
+                      "hijos": [
+                        { 
+                          "valor": "Sí, está opaco y expuesto al polvo",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Proptosis ocular desecada (riesgo altísimo de pérdida del globo). [PRIMEROS AUXILIOS]: URGENCIA OFTALMOLÓGICA. Empapar tela suave de algodón sin motas en suero fisiológico y recubrir el ojo sin apretarlo hacia adentro. Clínia inmediata." } ]
+                        },
+                        { 
+                          "valor": "No, lo mantengo lubricado/húmedo",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Proptosis ocular aguda contenida. [PRIMEROS AUXILIOS]: URGENCIA. Seguir lubricando constantemente durante el transporte. Evitar roces. Cirugía de reducción pronta." } ]
+                        }
+                      ]
+                    },
+                    {
+                      "valor": "Otras razas - Llorando y frotando la cara contra el suelo (Siguiente pregunta: ¿Hay material extraño clavado en el ojo?)",
+                      "hijos": [
+                        { 
+                          "valor": "Sí, veo una espina/palo u objeto incrustado",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Objeto extraño penetrante intraocular. [PRIMEROS AUXILIOS]: EMERGENCIA QUIRÚRGICA. BAJO NINGÚN CONCEPTO SACAR EL OBJETO (al sacarlo se drena el interior del ojo). Poner un vaso plástico o cono alrededor protegiendo que el objeto no choque con nada. Urgencias." } ]
+                        },
+                        { 
+                          "valor": "No, solo es inflamación severa",
+                          "hijos": [ { "valor": "[PRE-DIAGNÓSTICO]: Uveítis traumática grave, úlcera profunda o glaucoma agudo. [PRIMEROS AUXILIOS]: Colocar en penumbra u oscuridad total (tienen fotosensibilidad muy dolorosa). No aplicar colirios de uso humano sin receta. Evaluación prioritaria." } ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
